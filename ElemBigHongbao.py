@@ -11,6 +11,11 @@ def gethongbao(user):
                         datefmt='%a, %d %b %Y %H:%M:%S',
                         filename=os.path.dirname(__file__)+'/elem.log',
                         filemode='a')
+    console = logging.StreamHandler()
+    console.setLevel(logging.INFO)
+    formatter = logging.Formatter('%(name)-12s: %(levelname)-8s %(message)s')
+    console.setFormatter(formatter)
+    logging.getLogger('').addHandler(console)
 
     logging.info("start time" + datetime.datetime.now().strftime('%H:%M:%S.%f'))
     def hongbao():
