@@ -1,0 +1,2 @@
+APScheduler==3.5.3
+requests==2.18.4
