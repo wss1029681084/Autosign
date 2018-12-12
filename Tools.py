@@ -18,3 +18,6 @@ def GetCookie(user):
 def GetAgent(user):
   return config.get(user,"Agent")
 
+def GetUserid(user):
+  d=GetCookie(user)
+  return d.get(' USERID')
