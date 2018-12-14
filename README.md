@@ -3,7 +3,7 @@
 ### 步骤：<br>
 1.安装依赖  pip install -r requirements.txt<br>
 
-2.修改User.ini文件里的cookie和Agent的值，为用户本人的cookie和agent（可通过chares抓包获取）<br>
+2.修改User.ini文件里的cookie和Agent的值，为用户本人的cookie和agent（https://h5.ele.me/）,H5页面抓包，cookie要包含userid字段<br>
 
 3.可运行下test.py文件，查看添加的cookie是否有效。如果运行结果“红包已被抢完，请在下个时间段再参与”代表没问题，如果“message":"未登录","name":"UNAUTHORIZED”代表
   cookie有问题<br>
